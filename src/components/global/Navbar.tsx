@@ -25,7 +25,7 @@ const Navbar = () => {
   return (
     <>
       <Flex
-        className={`w-full justify-between md:py-2 py-4 shadow-md fixed top-0 px-4 md:px-12 items-center`}
+        className={`w-full justify-between py-4 shadow-md fixed top-0 px-4 md:px-12 items-center`}
         backgroundColor={useColorModeValue("white", "#02182B")}
       >
         <Link
@@ -49,7 +49,7 @@ const Navbar = () => {
               to={l.link}
               className={`${
                 location.pathname === l.link ? `${navLinkColor}` : ""
-              } p-4`}
+              } p-2`}
             >
               {l.name}
             </NavLink>
@@ -57,7 +57,7 @@ const Navbar = () => {
           <NavLink
             className={`${
               location.pathname === "/login" ? `${navLinkColor}` : ""
-            } p-4`}
+            } p-2`}
             to={"/login"}
           >
             Log in
@@ -65,7 +65,7 @@ const Navbar = () => {
           <NavLink
             className={`${
               location.pathname === "/register" ? `${navLinkColor}` : ""
-            } p-4`}
+            } p-2 bg-[#A2FAA3] text-black rounded-md`}
             to={"/register"}
           >
             Register
