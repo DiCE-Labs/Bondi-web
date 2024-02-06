@@ -25,7 +25,14 @@ const Navbar = () => {
         className={`w-full justify-between py-4 shadow-md fixed top-0 px-4 md:px-12 items-center`}
         backgroundColor={colorMode === "dark" ? "#02182B" : "white"}
       >
-        <Link to={"/"} className="font-bold">
+        <Link
+          to={"/"}
+          className=" font-extrabold md:text-3xl text-2xl flex items-center gap-2"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" height="1em" width="1em">
+            <path d="M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 00.707-1.707l-9-9a.999.999 0 00-1.414 0l-9 9A1 1 0 003 13zm9-8.586l6 6V15l.001 5H6v-9.586l6-6z" />
+            <path d="M12 18c3.703 0 4.901-3.539 4.95-3.689l-1.9-.621c-.008.023-.781 2.31-3.05 2.31-2.238 0-3.02-2.221-3.051-2.316l-1.899.627C7.099 14.461 8.297 18 12 18z" />
+          </svg>
           Bondi
         </Link>
 
@@ -55,7 +62,7 @@ const Navbar = () => {
             isRound
           />
         </Flex>
-        <Flex className="gap-4" display={{lg:"none",base:"flex"}}>
+        <Flex className="gap-4" display={{ lg: "none", base: "flex" }}>
           <IconButton
             aria-label="theme"
             onClick={() => toggleColorMode()}
