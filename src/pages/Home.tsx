@@ -1,8 +1,13 @@
+import { Box } from "@chakra-ui/react"
+
 const Home = () => {
   return (
-    <div>
+    <Box>
       home
-    </div>
+      <Box className=" min-h-screen">
+        he
+      </Box>
+    </Box>
   )
 }
 
