@@ -1,10 +1,16 @@
-import { Button, Flex,useColorMode} from "@chakra-ui/react";
+import { MoonIcon, SunIcon } from "@chakra-ui/icons";
+import { Button, Flex, IconButton, useColorMode } from "@chakra-ui/react";
 
 const Navbar = () => {
-  const {toggleColorMode}=useColorMode()
+  const { toggleColorMode, colorMode } = useColorMode();
   return (
     <Flex>
-      <Button backgroundColor={"custom.dark"} _hover={{backgroundColor:"custom.semi"}} onClick={()=>toggleColorMode()}>Nav</Button>
+      <Button>Nav</Button>
+      <IconButton
+        aria-label="theme"
+        onClick={() => toggleColorMode()}
+        icon={colorMode === "dark" ? <SunIcon /> : <MoonIcon />}
+      />
     </Flex>
   );
 };
