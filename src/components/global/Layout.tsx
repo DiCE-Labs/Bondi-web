@@ -15,7 +15,7 @@ const Layout: React.FC<Props> = ({ children }) => {
       backgroundColor={colorMode === "dark" ? "#02182B" : "white"}
     >
       <Navbar />
-      <Box as="main" className="min-h-screen w-full">
+      <Box as="main" className="min-h-screen w-full mt-24">
         {children}
       </Box>
     </Box>
