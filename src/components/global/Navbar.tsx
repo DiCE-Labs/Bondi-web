@@ -74,7 +74,7 @@ const Navbar = () => {
             aria-label="theme"
             onClick={() => toggleColorMode()}
             icon={colorMode === "dark" ? <SunIcon /> : <MoonIcon />}
-            isRound
+            borderRadius={"unset"}
           />
         </Flex>
         <Flex className="gap-4" display={{ lg: "none", base: "flex" }}>
@@ -82,7 +82,7 @@ const Navbar = () => {
             aria-label="theme"
             onClick={() => toggleColorMode()}
             icon={colorMode === "dark" ? <SunIcon /> : <MoonIcon />}
-            isRound
+            borderRadius={"unset"}
             display={{ lg: "none", base: "block" }}
           />
           <IconButton
@@ -91,6 +91,7 @@ const Navbar = () => {
             icon={<HamburgerIcon />}
             className="lg:hidden block"
             display={{ lg: "none", base: "block" }}
+            borderRadius={"unset"}
           />
         </Flex>
       </Flex>
