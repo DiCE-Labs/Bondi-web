@@ -65,7 +65,7 @@ const Navbar = () => {
           <NavLink
             className={`${
               location.pathname === "/register" ? `${navLinkColor}` : ""
-            } p-2 bg-[#A2FAA3] text-black`}
+            } p-2 bg-[#A2FAA3] rounded-md text-black`}
             to={"/register"}
           >
             Register
@@ -74,7 +74,6 @@ const Navbar = () => {
             aria-label="theme"
             onClick={() => toggleColorMode()}
             icon={colorMode === "dark" ? <SunIcon /> : <MoonIcon />}
-            borderRadius={"unset"}
           />
         </Flex>
         <Flex className="gap-4" display={{ lg: "none", base: "flex" }}>
@@ -82,7 +81,6 @@ const Navbar = () => {
             aria-label="theme"
             onClick={() => toggleColorMode()}
             icon={colorMode === "dark" ? <SunIcon /> : <MoonIcon />}
-            borderRadius={"unset"}
             display={{ lg: "none", base: "block" }}
           />
           <IconButton
@@ -91,7 +89,6 @@ const Navbar = () => {
             icon={<HamburgerIcon />}
             className="lg:hidden block"
             display={{ lg: "none", base: "block" }}
-            borderRadius={"unset"}
           />
         </Flex>
       </Flex>

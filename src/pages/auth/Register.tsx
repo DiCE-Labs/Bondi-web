@@ -36,7 +36,7 @@ export default function Register() {
           bg={useColorModeValue("white", "#02182B")}
           boxShadow={"lg"}
           p={8}
-          borderWidth={0.1}
+          borderWidth={0.01}
           borderColor={useColorModeValue("white", "#A2FAA3")}
         >
           <Stack spacing={4}>
@@ -57,6 +57,10 @@ export default function Register() {
             <FormControl id="email" isRequired>
               <FormLabel>Email address</FormLabel>
               <Input type="email" />
+            </FormControl>
+            <FormControl id="address" isRequired>
+              <FormLabel>Address</FormLabel>
+              <Input type="text" />
             </FormControl>
             <FormControl id="password" isRequired>
               <FormLabel>Password</FormLabel>
