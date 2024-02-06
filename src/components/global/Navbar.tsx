@@ -65,7 +65,7 @@ const Navbar = () => {
           <NavLink
             className={`${
               location.pathname === "/register" ? `${navLinkColor}` : ""
-            } p-2 bg-[#A2FAA3] text-black rounded-md`}
+            } p-2 bg-[#A2FAA3] text-black`}
             to={"/register"}
           >
             Register
