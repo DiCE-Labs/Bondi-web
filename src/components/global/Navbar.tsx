@@ -37,7 +37,7 @@ const Navbar = () => {
         </Link>
 
         <Flex
-          className="gap-8 items-center"
+          className="gap-4 items-center"
           display={{ lg: "flex", base: "none" }}
         >
           {navLinks.map((l, i) => (
@@ -50,11 +50,13 @@ const Navbar = () => {
                     ? "text-[#A2FAA3]"
                     : "text-[#1B98E0]"
                   : ""
-              }`}
+              } px-4`}
             >
               {l.name}
             </NavLink>
           ))}
+          <NavLink to={"/login"}>Log in</NavLink>
+          <NavLink to={"/register"}>Register</NavLink>
           <IconButton
             aria-label="theme"
             onClick={() => toggleColorMode()}
