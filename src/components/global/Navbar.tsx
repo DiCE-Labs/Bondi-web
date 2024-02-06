@@ -31,7 +31,7 @@ const Navbar = () => {
 
         <Flex
           className="gap-8 items-center"
-          display={{ lg: "block", base: "none" }}
+          display={{ lg: "flex", base: "none" }}
         >
           {navLinks.map((l, i) => (
             <NavLink
@@ -55,12 +55,13 @@ const Navbar = () => {
             isRound
           />
         </Flex>
-        <Flex className=" gap-4" display={{ lg: "hidden", base: "block" }}>
+        <Flex className="gap-4" display={{lg:"none",base:"flex"}}>
           <IconButton
             aria-label="theme"
             onClick={() => toggleColorMode()}
             icon={colorMode === "dark" ? <SunIcon /> : <MoonIcon />}
             isRound
+            display={{ lg: "none", base: "block" }}
           />
           <IconButton
             aria-label="menu"
