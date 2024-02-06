@@ -55,7 +55,7 @@ const Navbar = () => {
             isRound
           />
         </Flex>
-        <Flex className=" gap-4">
+        <Flex className=" gap-4" display={{ lg: "hidden", base: "block" }}>
           <IconButton
             aria-label="theme"
             onClick={() => toggleColorMode()}
