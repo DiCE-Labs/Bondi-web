@@ -78,10 +78,10 @@ export default function Register() {
               <Button
                 loadingText="Submitting"
                 size="lg"
-                bg={"blue.400"}
-                color={"white"}
+                bg={useColorModeValue("#92C9B1", "#A2FAA3")}
+                color={useColorModeValue("white", "black")}
                 _hover={{
-                  bg: "blue.500",
+                  bg: useColorModeValue("#02182B", "#92C9B1"),
                 }}
               >
                 Sign up
