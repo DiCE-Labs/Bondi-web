@@ -21,12 +21,8 @@ export default function Register() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <Flex
-      minH={"100vh"}
-      align={"center"}
-      justify={"center"}
-    >
-      <Stack spacing={8} mx={"auto"} maxW={"lg"} py={12} px={6}>
+    <Flex minH={"100vh"} align={"center"} justify={"center"}>
+      <Stack spacing={8} mx={"auto"} maxW={"lg"} py={12} className="md:px-6">
         <Stack align={"center"}>
           <Heading fontSize={"4xl"} textAlign={"center"}>
             Sign up
@@ -37,9 +33,11 @@ export default function Register() {
         </Stack>
         <Box
           rounded={"lg"}
-          bg={useColorModeValue("white", "gray.700")}
+          bg={useColorModeValue("white", "#02182B")}
           boxShadow={"lg"}
           p={8}
+          borderWidth={0.1}
+          borderColor={useColorModeValue("white", "#A2FAA3")}
         >
           <Stack spacing={4}>
             <HStack>
