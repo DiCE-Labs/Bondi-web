@@ -20,10 +20,12 @@ const Navbar = () => {
   const { toggleColorMode, colorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
   const location = useLocation();
+
+  const navLinkColor = useColorModeValue("text-[#1B98E0]", "text-[#A2FAA3]");
   return (
     <>
       <Flex
-        className={`w-full justify-between py-4 shadow-md fixed top-0 px-4 md:px-12 items-center`}
+        className={`w-full justify-between md:py-2 py-4 shadow-md fixed top-0 px-4 md:px-12 items-center`}
         backgroundColor={useColorModeValue("white", "#02182B")}
       >
         <Link
@@ -46,18 +48,28 @@ const Navbar = () => {
               key={i}
               to={l.link}
               className={`${
-                location.pathname === l.link
-                  ? colorMode === "dark"
-                    ? "text-[#A2FAA3]"
-                    : "text-[#1B98E0]"
-                  : ""
-              } px-4`}
+                location.pathname === l.link ? `${navLinkColor}` : ""
+              } p-4`}
             >
               {l.name}
             </NavLink>
           ))}
-          <NavLink className={"px-4"} to={"/login"}>Log in</NavLink>
-          <NavLink className={"px-4"} to={"/register"}>Register</NavLink>
+          <NavLink
+            className={`${
+              location.pathname === "/login" ? `${navLinkColor}` : ""
+            } p-4`}
+            to={"/login"}
+          >
+            Log in
+          </NavLink>
+          <NavLink
+            className={`${
+              location.pathname === "/register" ? `${navLinkColor}` : ""
+            } p-4`}
+            to={"/register"}
+          >
+            Register
+          </NavLink>
           <IconButton
             aria-label="theme"
             onClick={() => toggleColorMode()}
