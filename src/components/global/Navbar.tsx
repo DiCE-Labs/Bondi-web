@@ -1,10 +1,23 @@
-import { MoonIcon, SunIcon } from "@chakra-ui/icons";
-import { Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Flex, IconButton, Input, useColorMode, useDisclosure } from "@chakra-ui/react";
+import { HamburgerIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
+import {
+  Button,
+  Drawer,
+  DrawerBody,
+  DrawerCloseButton,
+  DrawerContent,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerOverlay,
+  Flex,
+  IconButton,
+  useColorMode,
+  useDisclosure,
+} from "@chakra-ui/react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const { toggleColorMode, colorMode } = useColorMode();
-  const { isOpen, onOpen, onClose } = useDisclosure()
+  const { isOpen, onOpen, onClose } = useDisclosure();
   const location = useLocation();
   return (
     <>
@@ -39,12 +52,16 @@ const Navbar = () => {
             isRound
           />
         </Flex>
-        <Button
-         colorScheme='teal' onClick={onOpen}>
-        Open
-      </Button>
+        <IconButton
+          aria-label="menu"
+          onClick={onOpen}
+          icon={<HamburgerIcon />}
+          className="lg:hidden block"
+          display={{ lg: "none", base: "block" }}
+        />
       </Flex>
       <Drawer
+        colorScheme={colorMode === "dark" ? "#02182B" : "white"}
         isOpen={isOpen}
         placement="right"
         onClose={onClose}
@@ -52,17 +69,36 @@ const Navbar = () => {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader>Create your account</DrawerHeader>
+          <DrawerHeader></DrawerHeader>
 
-          <DrawerBody>
-            <Input placeholder="Type here..." />
+          <DrawerBody className=" flex flex-col gap-4">
+            {navLinks.map((l, i) => (
+              <NavLink
+                key={i}
+                to={l.link}
+                className={`${
+                  location.pathname === l.link
+                    ? colorMode === "dark"
+                      ? "text-[#A2FAA3]"
+                      : "text-[#1B98E0]"
+                    : ""
+                } py-2 hover:opacity-80`}
+                onClick={onClose}
+              >
+                {l.name}
+              </NavLink>
+            ))}
           </DrawerBody>
 
           <DrawerFooter>
-            <Button variant="outline" mr={3} onClick={onClose}>
-              Cancel
+            <Button
+              className=" w-full"
+              variant="outline"
+              mr={3}
+              onClick={onClose}
+            >
+              Log out
             </Button>
-            <Button colorScheme="blue">Save</Button>
           </DrawerFooter>
         </DrawerContent>
       </Drawer>
