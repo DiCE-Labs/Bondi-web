@@ -29,7 +29,10 @@ const Navbar = () => {
           Bondi
         </Link>
 
-        <Flex className=" gap-8 items-center">
+        <Flex
+          className="gap-8 items-center"
+          display={{ lg: "block", base: "none" }}
+        >
           {navLinks.map((l, i) => (
             <NavLink
               key={i}
@@ -52,13 +55,21 @@ const Navbar = () => {
             isRound
           />
         </Flex>
-        <IconButton
-          aria-label="menu"
-          onClick={onOpen}
-          icon={<HamburgerIcon />}
-          className="lg:hidden block"
-          display={{ lg: "none", base: "block" }}
-        />
+        <Flex className=" gap-4">
+          <IconButton
+            aria-label="theme"
+            onClick={() => toggleColorMode()}
+            icon={colorMode === "dark" ? <SunIcon /> : <MoonIcon />}
+            isRound
+          />
+          <IconButton
+            aria-label="menu"
+            onClick={onOpen}
+            icon={<HamburgerIcon />}
+            className="lg:hidden block"
+            display={{ lg: "none", base: "block" }}
+          />
+        </Flex>
       </Flex>
       <Drawer
         colorScheme={colorMode === "dark" ? "#02182B" : "white"}
