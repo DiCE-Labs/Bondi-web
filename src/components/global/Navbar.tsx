@@ -51,13 +51,13 @@ const Navbar = () => {
                     ? "text-[#A2FAA3]"
                     : "text-[#1B98E0]"
                   : ""
-              } p-4`}
+              } px-4`}
             >
               {l.name}
             </NavLink>
           ))}
-          <NavLink to={"/login"}>Log in</NavLink>
-          <NavLink to={"/register"}>Register</NavLink>
+          <NavLink className={"px-4"} to={"/login"}>Log in</NavLink>
+          <NavLink className={"px-4"} to={"/register"}>Register</NavLink>
           <IconButton
             aria-label="theme"
             onClick={() => toggleColorMode()}
