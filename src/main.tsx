@@ -4,6 +4,7 @@ import App from "./App.tsx";
 import { RecoilRoot } from "recoil";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { BrowserRouter } from "react-router-dom";
+import { ChakraProvider } from "@chakra-ui/react";
 
 const client = new QueryClient();
 
@@ -12,7 +13,9 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <RecoilRoot>
       <QueryClientProvider client={client}>
         <BrowserRouter>
-          <App />
+          <ChakraProvider>
+            <App />
+          </ChakraProvider>
         </BrowserRouter>
       </QueryClientProvider>
     </RecoilRoot>
