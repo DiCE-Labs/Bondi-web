@@ -4,7 +4,7 @@ import { Button, Flex, IconButton, useColorMode } from "@chakra-ui/react";
 const Navbar = () => {
   const { toggleColorMode, colorMode } = useColorMode();
   return (
-    <Flex>
+    <Flex className="w-full justify-between">
       <Button>Nav</Button>
       <IconButton
         aria-label="theme"
