@@ -11,6 +11,7 @@ import {
   Flex,
   IconButton,
   useColorMode,
+  useColorModeValue,
   useDisclosure,
 } from "@chakra-ui/react";
 import { Link, NavLink, useLocation } from "react-router-dom";
@@ -23,7 +24,7 @@ const Navbar = () => {
     <>
       <Flex
         className={`w-full justify-between py-4 shadow-md fixed top-0 px-4 md:px-12 items-center`}
-        backgroundColor={colorMode === "dark" ? "#02182B" : "white"}
+        backgroundColor={useColorModeValue("white", "#02182B")}
       >
         <Link
           to={"/"}
@@ -50,7 +51,7 @@ const Navbar = () => {
                     ? "text-[#A2FAA3]"
                     : "text-[#1B98E0]"
                   : ""
-              } px-4`}
+              } p-4`}
             >
               {l.name}
             </NavLink>
