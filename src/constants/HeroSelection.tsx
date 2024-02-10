@@ -10,12 +10,12 @@ const HeroSelection = () => {
       )} border-4`}
     >
       <Flex>
-        <Box className="bg-gray-500 flex items-center justify-center p-2 rounded-md">
+        <Box className="bg-gray-300 flex items-center justify-center p-2 rounded-md">
           <IconPin />
         </Box>
         <Box>
           <Text>Location</Text>
-          <Select variant={"unstyled"} placeholder="Select Location">
+          <Select variant={"unstyled"}>
             <option value="option1">Lusaka</option>
             <option value="option2">Mansa</option>
             <option value="option3">Chipata</option>
