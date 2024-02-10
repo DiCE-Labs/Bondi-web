@@ -17,9 +17,13 @@ const Home = () => {
           className=" w-full h-full object-cover"
         />
       </Box>
-      <Box className=" lg:col-span-2 col-span-1 justify-center items-center flex flex-col">
+      <Box className=" lg:col-span-2 col-span-1 justify-center items-start flex flex-col">
         <Text className="md:text-7xl text-5xl font-bold">
           We help people to realize their dream property
+        </Text>
+        <Text className={` max-w-md mt-4`}>
+          We are creative people who provide the best way to you who want to
+          have a new confortable and suitable place to live
         </Text>
       </Box>
     </Box>
