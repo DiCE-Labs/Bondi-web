@@ -1,10 +1,14 @@
 import { Box, Image, Text, useColorModeValue } from "@chakra-ui/react";
 import bg from "../assets/hero.webp";
 import HeroSelection from "../constants/HeroSelection";
+import Services from "../components/home/Services";
 
 const Home = () => {
   return (
-    <Box as="header" className="grid grid-cols-1 lg:grid-cols-3 min-h-screen gap-8">
+    <Box
+      as="header"
+      className="grid grid-cols-1 lg:grid-cols-3 min-h-screen gap-8"
+    >
       <Box
         className={`flex items-center lg:order-first order-last justify-center w-full ${useColorModeValue(
           "bg-[#1B98E0]",
@@ -26,7 +30,8 @@ const Home = () => {
           We are creative people who provide the best way to you who want to
           have a new confortable and suitable place to live
         </Text>
-        <HeroSelection/>
+        <HeroSelection />
+        <Services />
       </Box>
     </Box>
   );
