@@ -1,5 +1,6 @@
 import { Box, Flex, Select, Text, useColorModeValue } from "@chakra-ui/react";
 import IconPin from "../assets/icons/PinIcon";
+import IconDollar from "../assets/icons/Dollar";
 
 const HeroSelection = () => {
   return (
@@ -23,9 +24,14 @@ const HeroSelection = () => {
         </Box>
       </Flex>
       <Flex>
-        Price
+        <IconDollar />
         <Box>
           <Text>Location</Text>
+          <Select variant={"unstyled"}>
+            <option value="option1">Lusaka</option>
+            <option value="option2">Mansa</option>
+            <option value="option3">Chipata</option>
+          </Select>
         </Box>
       </Flex>
       <Flex>
