@@ -45,6 +45,7 @@ const HeroSelection = () => {
             <option value="option2">Plot</option>
             <option value="option3">Appartment</option>
             <option value="option3">Office</option>
+            <option value="option3">Farm</option>
           </Select>
         </Box>
       </Flex>
