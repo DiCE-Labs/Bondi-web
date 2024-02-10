@@ -18,7 +18,7 @@ const Home = () => {
         />
       </Box>
       <Box className=" lg:col-span-2 col-span-1 justify-center items-center flex flex-col">
-        <Text className=" text-7xl">
+        <Text className="md:text-7xl text-5xl font-bold">
           We help people to realize their dream property
         </Text>
       </Box>
