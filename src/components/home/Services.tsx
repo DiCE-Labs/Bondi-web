@@ -2,9 +2,9 @@ import { Box, Text } from "@chakra-ui/react";
 
 const Services = () => {
   return (
-    <Box>
+    <Box className=" mt-8">
       <Text>Our Services</Text>
-      <Box>
+      <Box className=" grid md:grid-cols-3 grid-cols-2 gap-8 md:gap-4 mt-6">
         <Box>
           <Text>The price we offer accordance with the quality we provide</Text>
         </Box>
