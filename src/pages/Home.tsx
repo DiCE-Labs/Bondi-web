@@ -1,5 +1,6 @@
 import { Box, Image, Text, useColorModeValue } from "@chakra-ui/react";
 import bg from "../assets/hero.webp";
+import HeroSelection from "../constants/HeroSelection";
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
           We are creative people who provide the best way to you who want to
           have a new confortable and suitable place to live
         </Text>
+        <HeroSelection/>
       </Box>
     </Box>
   );
