@@ -26,11 +26,12 @@ const HeroSelection = () => {
       <Flex>
         <IconDollar />
         <Box>
-          <Text>Location</Text>
+          <Text>Price</Text>
           <Select variant={"unstyled"}>
-            <option value="option1">Lusaka</option>
-            <option value="option2">Mansa</option>
-            <option value="option3">Chipata</option>
+            <option value="option1">K1500-K2500</option>
+            <option value="option2">K2500-K5000</option>
+            <option value="option3">K5000-K8000</option>
+            <option value="option3">K8000+</option>
           </Select>
         </Box>
       </Flex>
