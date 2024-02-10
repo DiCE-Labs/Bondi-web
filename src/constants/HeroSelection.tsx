@@ -22,7 +22,7 @@ const HeroSelection = () => {
         <Box
           className={`${useColorModeValue(
             "bg-gray-300",
-            "bg-[#247BA0]"
+            "bg-[#1B98E0]"
           )} flex items-center justify-center px-1 rounded-md`}
         >
           <IconPin />
@@ -40,7 +40,7 @@ const HeroSelection = () => {
         <Box
           className={`${useColorModeValue(
             "bg-gray-300",
-            "bg-[#247BA0]"
+            "bg-[#1B98E0]"
           )} flex items-center justify-center px-1 rounded-md`}
         >
           <IconDollar />
@@ -59,7 +59,7 @@ const HeroSelection = () => {
         <Box
           className={`${useColorModeValue(
             "bg-gray-300",
-            "bg-[#247BA0]"
+            "bg-[#1B98E0]"
           )} flex items-center justify-center px-1 rounded-md`}
         >
           <IconBxHomeHeart />
