@@ -15,6 +15,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { Link, NavLink, useLocation } from "react-router-dom";
+import IconBxCartAlt from "../../assets/icons/CartIcon";
 
 const Navbar = () => {
   const { toggleColorMode, colorMode } = useColorMode();
@@ -70,11 +71,6 @@ const Navbar = () => {
           >
             Register
           </NavLink>
-          <IconButton
-            aria-label="theme"
-            onClick={() => toggleColorMode()}
-            icon={colorMode === "dark" ? <SunIcon /> : <MoonIcon />}
-          />
         </Flex>
         <Flex className="gap-4" display={{ lg: "none", base: "flex" }}>
           <IconButton
@@ -89,6 +85,14 @@ const Navbar = () => {
             icon={<HamburgerIcon />}
             className="lg:hidden block"
             display={{ lg: "none", base: "block" }}
+          />
+        </Flex>
+        <Flex className=" gap-4" display={{ lg: "flex", base: "none" }}>
+          <IconButton aria-label="cart" icon={<IconBxCartAlt />} />
+          <IconButton
+            aria-label="theme"
+            onClick={() => toggleColorMode()}
+            icon={colorMode === "dark" ? <SunIcon /> : <MoonIcon />}
           />
         </Flex>
       </Flex>
@@ -144,6 +148,10 @@ const navLinks = [
   {
     name: "Home",
     link: "/",
+  },
+  {
+    name: "Properties",
+    link: "/properties",
   },
   {
     name: "Favorites",
