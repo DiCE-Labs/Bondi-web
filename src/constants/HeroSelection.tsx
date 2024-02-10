@@ -1,4 +1,4 @@
-import { Box, Flex, Select, Text, useColorModeValue } from "@chakra-ui/react";
+import { Box, Button, Flex, Select, Text, useColorModeValue } from "@chakra-ui/react";
 import IconPin from "../assets/icons/PinIcon";
 import IconDollar from "../assets/icons/Dollar";
 import IconBxHomeHeart from "../assets/icons/HomeHeart";
@@ -49,7 +49,9 @@ const HeroSelection = () => {
           </Select>
         </Box>
       </Flex>
-      <Flex>4</Flex>
+      <Button>
+        Browse
+      </Button>
     </Box>
   );
 };
