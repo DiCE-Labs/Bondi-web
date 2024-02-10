@@ -1,6 +1,6 @@
 function IconPin() {
   return (
-    <svg fill="none" viewBox="0 0 24 24" height="1em" width="1em">
+    <svg fill="none" viewBox="0 0 24 24" height="1.3em" width="1.3em">
       <path
         fill="currentColor"
         fillRule="evenodd"

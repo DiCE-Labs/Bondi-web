@@ -23,12 +23,12 @@ const HeroSelection = () => {
           className={`${useColorModeValue(
             "bg-gray-300",
             "bg-[#247BA0]"
-          )} flex items-center justify-center px-3 rounded-md`}
+          )} flex items-center justify-center px-1 rounded-md`}
         >
           <IconPin />
         </Box>
         <Box>
-          <Text>Location</Text>
+          <Text className="text-gray-500">Location</Text>
           <Select variant={"unstyled"}>
             <option value="option1">Lusaka</option>
             <option value="option2">Mansa</option>
@@ -41,12 +41,12 @@ const HeroSelection = () => {
           className={`${useColorModeValue(
             "bg-gray-300",
             "bg-[#247BA0]"
-          )} flex items-center justify-center px-3 rounded-md`}
+          )} flex items-center justify-center px-1 rounded-md`}
         >
           <IconDollar />
         </Box>
         <Box>
-          <Text>Price</Text>
+          <Text className="text-gray-500">Price</Text>
           <Select variant={"unstyled"}>
             <option value="option1">K1500-K2500</option>
             <option value="option2">K2500-K5000</option>
@@ -60,12 +60,12 @@ const HeroSelection = () => {
           className={`${useColorModeValue(
             "bg-gray-300",
             "bg-[#247BA0]"
-          )} flex items-center justify-center px-3 rounded-md`}
+          )} flex items-center justify-center px-1 rounded-md`}
         >
           <IconBxHomeHeart />
         </Box>
         <Box>
-          <Text>Type of Property</Text>
+          <Text className="text-gray-500">Type of Property</Text>
           <Select variant={"unstyled"}>
             <option value="option1">Boarding House</option>
             <option value="option2">Plot</option>
