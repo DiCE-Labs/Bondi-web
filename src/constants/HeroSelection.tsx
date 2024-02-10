@@ -56,7 +56,7 @@ const HeroSelection = () => {
           </Select>
         </Box>
       </Flex>
-      <Button>Browse</Button>
+      <Button bg={useColorModeValue("#A2FAA3", "#1B98E0")}>Browse</Button>
     </Box>
   );
 };
