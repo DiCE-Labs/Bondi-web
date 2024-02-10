@@ -1,4 +1,4 @@
-import { Box, Heading, Image, useColorModeValue } from "@chakra-ui/react";
+import { Box, Image, Text, useColorModeValue } from "@chakra-ui/react";
 import bg from "../assets/hero.webp";
 
 const Home = () => {
@@ -17,8 +17,10 @@ const Home = () => {
           className=" w-full h-full object-cover"
         />
       </Box>
-      <Box className=" lg:col-span-2 col-span-1">
-        <Heading>We help people to realize their dream property</Heading>
+      <Box className=" lg:col-span-2 col-span-1 justify-center items-center flex flex-col">
+        <Text className=" text-7xl">
+          We help people to realize their dream property
+        </Text>
       </Box>
     </Box>
   );
