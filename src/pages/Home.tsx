@@ -17,7 +17,9 @@ const Home = () => {
           className=" w-full h-full object-cover"
         />
       </Box>
-      <Box className=" lg:col-span-2 col-span-1">he</Box>
+      <Box className=" lg:col-span-2 col-span-1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis ullam sapiente obcaecati asperiores sit non ea tenetur dolorum iusto ipsa hic, laborum nemo nisi placeat delectus cum et modi vel!
+      </Box>
     </Box>
   );
 };
