@@ -1,14 +1,25 @@
-import { Box } from "@chakra-ui/react"
+import { Box, Image, useColorModeValue } from "@chakra-ui/react";
+import bg from "../assets/hero.webp";
 
 const Home = () => {
   return (
-    <Box>
-      home
-      <Box className=" min-h-screen">
-        he
+    <Box as="header" className="grid grid-cols-1 lg:grid-cols-3 min-h-screen">
+      <Box
+        className={`flex items-center justify-center w-full ${useColorModeValue(
+          "bg-[#1B98E0]",
+          "bg-[#A2FAA3]"
+        )}`}
+      >
+        <Image
+          src={bg}
+          alt="heroImg"
+          loading="lazy"
+          className=" w-full h-full object-cover"
+        />
       </Box>
+      <Box className=" lg:col-span-2 col-span-1">he</Box>
     </Box>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
