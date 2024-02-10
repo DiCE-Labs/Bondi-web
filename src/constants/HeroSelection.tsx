@@ -13,12 +13,12 @@ import IconBxHomeHeart from "../assets/icons/HomeHeart";
 const HeroSelection = () => {
   return (
     <Box
-      className={`md:grid-cols-4 gap-8 grid grid-cols-1 rounded-md p-4 mt-8 w-full ${useColorModeValue(
+      className={`md:grid-cols-4 gap-8 md:gap-2 grid grid-cols-1 rounded-md p-4 mt-8 w-full ${useColorModeValue(
         "border-[#1B98E0]",
         "border-[#A2FAA3]"
       )} border-4`}
     >
-      <Flex>
+      <Flex className=" gap-2">
         <Box className="bg-gray-300 flex items-center justify-center p-2 rounded-md">
           <IconPin />
         </Box>
@@ -31,8 +31,10 @@ const HeroSelection = () => {
           </Select>
         </Box>
       </Flex>
-      <Flex>
-        <IconDollar />
+      <Flex className=" gap-2">
+        <Box className="bg-gray-300 flex items-center justify-center p-2 rounded-md">
+          <IconDollar />
+        </Box>
         <Box>
           <Text>Price</Text>
           <Select variant={"unstyled"}>
@@ -43,8 +45,10 @@ const HeroSelection = () => {
           </Select>
         </Box>
       </Flex>
-      <Flex>
-        <IconBxHomeHeart />
+      <Flex className=" gap-2">
+        <Box className="bg-gray-300 flex items-center justify-center p-2 rounded-md">
+          <IconBxHomeHeart />
+        </Box>
         <Box>
           <Text>Type of Property</Text>
           <Select variant={"unstyled"}>
