@@ -13,13 +13,18 @@ import IconBxHomeHeart from "../assets/icons/HomeHeart";
 const HeroSelection = () => {
   return (
     <Box
-      className={`md:grid-cols-4 gap-8 md:gap-2 grid grid-cols-1 rounded-md p-4 mt-8 w-full ${useColorModeValue(
+      className={`md:grid-cols-4 gap-8 md:gap-2 grid grid-cols-1 items-center rounded-lg p-4 mt-8 w-full ${useColorModeValue(
         "border-[#1B98E0]",
         "border-[#A2FAA3]"
       )} border-4`}
     >
-      <Flex className=" gap-2">
-        <Box className="bg-gray-300 flex items-center justify-center p-2 rounded-md">
+      <Flex className="gap-2">
+        <Box
+          className={`${useColorModeValue(
+            "bg-gray-300",
+            "bg-[#247BA0]"
+          )} flex items-center justify-center px-3 rounded-md`}
+        >
           <IconPin />
         </Box>
         <Box>
@@ -32,7 +37,12 @@ const HeroSelection = () => {
         </Box>
       </Flex>
       <Flex className=" gap-2">
-        <Box className="bg-gray-300 flex items-center justify-center p-2 rounded-md">
+        <Box
+          className={`${useColorModeValue(
+            "bg-gray-300",
+            "bg-[#247BA0]"
+          )} flex items-center justify-center px-3 rounded-md`}
+        >
           <IconDollar />
         </Box>
         <Box>
@@ -46,7 +56,12 @@ const HeroSelection = () => {
         </Box>
       </Flex>
       <Flex className=" gap-2">
-        <Box className="bg-gray-300 flex items-center justify-center p-2 rounded-md">
+        <Box
+          className={`${useColorModeValue(
+            "bg-gray-300",
+            "bg-[#247BA0]"
+          )} flex items-center justify-center px-3 rounded-md`}
+        >
           <IconBxHomeHeart />
         </Box>
         <Box>
