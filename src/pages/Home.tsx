@@ -3,7 +3,7 @@ import bg from "../assets/hero.webp";
 
 const Home = () => {
   return (
-    <Box as="header" className="grid grid-cols-1 lg:grid-cols-3 min-h-screen">
+    <Box as="header" className="grid grid-cols-1 lg:grid-cols-3 min-h-screen gap-8">
       <Box
         className={`flex items-center lg:order-first order-last justify-center w-full ${useColorModeValue(
           "bg-[#1B98E0]",
