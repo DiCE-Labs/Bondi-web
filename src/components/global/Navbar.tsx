@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <>
       <Flex
-        className={`w-full justify-between py-4 shadow-md fixed top-0 px-4 md:px-12 items-center`}
+        className={`w-full justify-between py-4 shadow-md fixed top-0 px-4 md:px-8 items-center`}
         backgroundColor={useColorModeValue("white", "#02182B")}
       >
         <Link
