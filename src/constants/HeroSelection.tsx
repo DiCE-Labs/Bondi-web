@@ -15,7 +15,7 @@ const HeroSelection = () => {
         </Box>
         <Box>
           <Text>Location</Text>
-          <Select placeholder="Select Location">
+          <Select variant={"unstyled"} placeholder="Select Location">
             <option value="option1">Lusaka</option>
             <option value="option2">Mansa</option>
             <option value="option3">Chipata</option>
