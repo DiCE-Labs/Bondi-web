@@ -13,7 +13,7 @@ import IconBxHomeHeart from "../assets/icons/HomeHeart";
 const HeroSelection = () => {
   return (
     <Box
-      className={`md:grid-cols-4 grid grid-cols-1 rounded-md p-4 mt-8 w-full ${useColorModeValue(
+      className={`md:grid-cols-4 gap-8 grid grid-cols-1 rounded-md p-4 mt-8 w-full ${useColorModeValue(
         "border-[#1B98E0]",
         "border-[#A2FAA3]"
       )} border-4`}

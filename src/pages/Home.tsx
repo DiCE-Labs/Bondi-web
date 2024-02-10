@@ -15,7 +15,7 @@ const Home = () => {
           src={bg}
           alt="heroImg"
           loading="lazy"
-          className=" w-full h-full object-cover grayscale"
+          className=" w-full md:h-full h-96 object-cover grayscale"
         />
       </Box>
       <Box className=" lg:col-span-2 col-span-1 justify-center items-start flex flex-col">
