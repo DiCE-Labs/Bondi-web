@@ -10,7 +10,7 @@ const Hero = () => {
       className="grid grid-cols-1 lg:grid-cols-3 min-h-screen gap-8 py-12 md:py-0 md:bg-gradient-to-bl via-transparent from-transparent to-lime-400/10"
     >
       <Box
-        className={`flex items-center lg:order-first order-last justify-center w-full ${useColorModeValue(
+        className={`flex items-center overflow-hidden lg:order-first order-last justify-center w-full ${useColorModeValue(
           "bg-[#1B98E0]",
           "bg-[#A2FAA3]"
         )}`}
@@ -19,7 +19,7 @@ const Hero = () => {
           src={bg}
           alt="heroImg"
           loading="lazy"
-          className=" w-full md:h-full h-96 object-cover grayscale"
+          className=" w-full md:h-full h-96 object-cover grayscale hover:grayscale-0 duration-300 delay-100 hover:rotate-3 hover:scale-105 ease-in-out"
         />
       </Box>
       <Box className=" lg:col-span-2 col-span-1 justify-center items-start flex flex-col">
