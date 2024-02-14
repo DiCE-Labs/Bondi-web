@@ -22,13 +22,15 @@ const FeaturedListings = () => {
       </Flex>
       <Box className="grid md:grid-cols-3 grid-cols-1 w-full">
         {dummyListing.map((item, i) => (
-          <Box key={i}>
-            <Image
-              alt="listingImg"
-              loading="lazy"
-              className="w-full h-full object-cover"
-              src={item.image}
-            />
+          <Box key={i} className="rounded-3xl shadow-lg overflow-hidden">
+            <Box className="h-56">
+              <Image
+                alt="listingImg"
+                loading="lazy"
+                className="w-full h-full object-cover"
+                src={item.image}
+              />
+            </Box>
             <Flex className=" flex-col gap-2">
               <Text>{item.price}/month</Text>
               <Text>{item.name}</Text>

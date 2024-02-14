@@ -1,6 +1,10 @@
+import img1 from "../assets/images/house1.jpg";
+import img2 from "../assets/images/house2.jpg";
+import img3 from "../assets/images/house3.jpg";
+
 export const dummyListing = [
   {
-    image: "https://example.com/listing1.jpg",
+    image: img1,
     price: "K50,000",
     name: "Beautiful Home with a View",
     address: "123 Main St, Cityville",
@@ -9,7 +13,7 @@ export const dummyListing = [
     dimensions: "6x7",
   },
   {
-    image: "https://example.com/listing2.jpg",
+    image: img2,
     price: "K75,000",
     name: "Luxurious Mansion",
     address: "456 Oak St, Townsville",
@@ -18,7 +22,7 @@ export const dummyListing = [
     dimensions: "9x7",
   },
   {
-    image: "https://example.com/listing3.jpg",
+    image: img3,
     price: "K30,000",
     name: "Cozy Cottage",
     address: "789 Pine St, Villagetown",
