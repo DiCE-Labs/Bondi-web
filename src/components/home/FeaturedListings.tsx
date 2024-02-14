@@ -20,10 +20,13 @@ const FeaturedListings = () => {
           </p>
         </Link>
       </Flex>
-      <Box className="grid md:grid-cols-3 grid-cols-1 w-full">
+      <Box className="grid md:grid-cols-3 grid-cols-1 w-full gap-8">
         {dummyListing.map((item, i) => (
-          <Box key={i} className="rounded-3xl shadow-lg overflow-hidden">
-            <Box className="h-56">
+          <Box
+            key={i}
+            className={`rounded-3xl shadow-lg overflow-hidden border-lime-400 border border-opacity-50`}
+          >
+            <Box className=" h-48">
               <Image
                 alt="listingImg"
                 loading="lazy"
@@ -31,7 +34,7 @@ const FeaturedListings = () => {
                 src={item.image}
               />
             </Box>
-            <Flex className=" flex-col gap-2">
+            <Flex className=" flex-col gap-2 p-4">
               <Text>{item.price}/month</Text>
               <Text>{item.name}</Text>
               <Text>{item.address}</Text>
