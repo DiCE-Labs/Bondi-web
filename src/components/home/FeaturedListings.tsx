@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 const FeaturedListings = () => {
   return (
     <Box as="section" className=" min-h-screen w-full">
-      <Flex>
-        <Text>Featured Listings</Text>
+      <Flex className=" w-full justify-between">
+        <Text className=" text-4xl font-bold">Featured Listings</Text>
         <Link to={"#"} className=" flex items-center gap-2">
           {" "}
           <span>Browse All Featured</span>
