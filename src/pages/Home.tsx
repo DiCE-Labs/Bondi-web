@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <Box
       as="header"
-      className="grid grid-cols-1 lg:grid-cols-3 min-h-screen gap-8"
+      className="grid grid-cols-1 lg:grid-cols-3 min-h-screen gap-8 py-12 md:py-0"
     >
       <Box
         className={`flex items-center lg:order-first order-last justify-center w-full ${useColorModeValue(
