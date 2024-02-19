@@ -26,15 +26,15 @@ const BottomHero = () => {
           className=" w-full h-full object-cover grayscale hover:grayscale-0 duration-300 delay-100 hover:rotate-1 hover:scale-105 ease-in-out"
         />
       </Box>
-      <Box>
-        <Text as={"h1"} className="text-2xl md:text-4xl font-bold max-w-sm">
+      <Box className="md:max-w-md lg:max-w-lg w-full">
+        <Text as={"h1"} className="text-2xl md:text-4xl font-bold">
           Comfort Is Our Top Priority For You
         </Text>
         <Text
           className={`${useColorModeValue(
             "text-gray-600",
             "text-gray-300"
-          )} py-4 mb-6 max-w-sm`}
+          )} py-4 mb-6`}
         >
           We guarantee that the products we sell will make our customers happy
           because we are very concerned about our consumer satisfaction
@@ -44,7 +44,7 @@ const BottomHero = () => {
           className={`${useColorModeValue(
             "text-gray-600",
             "text-gray-300"
-          )} py-4 mb-6 max-w-sm text-sm`}
+          )} py-4 mb-6 text-sm`}
         >
           "Your company is truly upstanding and is behind its product 100%. It's
           the perfect solution for our business. It has really helped our
