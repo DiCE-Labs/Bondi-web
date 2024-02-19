@@ -53,8 +53,15 @@ const BottomHero = () => {
         <Flex className=" gap-4 items-center">
           <Avatar name="Prosper Otemuyiwa" src="https://bit.ly/prosper-baba" />
           <Box>
-            <Text>Cholah Kuboko</Text>
-            <Text>CEO of Bondi</Text>
+            <Text className="font-bold">Cholah Kuboko</Text>
+            <Text
+              className={`${useColorModeValue(
+                "text-gray-400",
+                "text-gray-300"
+              )}`}
+            >
+              CEO of Bondi
+            </Text>
           </Box>
         </Flex>
       </Box>
