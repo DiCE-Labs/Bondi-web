@@ -1,4 +1,4 @@
-import { Box, Image, Text, useColorModeValue } from "@chakra-ui/react";
+import { Box, Divider, Image, Text, useColorModeValue } from "@chakra-ui/react";
 import bg from "../../assets/images/hero.png";
 
 const BottomHero = () => {
@@ -25,11 +25,12 @@ const BottomHero = () => {
           className={`${useColorModeValue(
             "text-gray-600",
             "text-gray-300"
-          )} py-8`}
+          )} py-4 mb-6 max-w-sm`}
         >
           We guarantee that the products we sell will make our customers happy
           because we are very concerned about our consumer satisfaction
         </Text>
+        <Divider/>
       </Box>
     </Box>
   );
