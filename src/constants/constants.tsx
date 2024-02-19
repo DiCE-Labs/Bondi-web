@@ -31,3 +31,18 @@ export const dummyListing = [
     dimensions: "9x7",
   },
 ];
+
+export const categories = [
+  {
+    icon: "",
+    name: "Appartments",
+  },
+  {
+    icon: "",
+    name: "Boarding House",
+  },
+  {
+    icon: "",
+    name: "Plots",
+  },
+];
