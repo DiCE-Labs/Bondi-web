@@ -1,3 +1,4 @@
+import IconHomeOutline from "../assets/icons/HomeOutline";
 import img1 from "../assets/images/house1.jpg";
 import img2 from "../assets/images/house2.jpg";
 import img3 from "../assets/images/house3.jpg";
@@ -34,7 +35,7 @@ export const dummyListing = [
 
 export const categories = [
   {
-    icon: "",
+    icon: <IconHomeOutline />,
     name: "Appartments",
   },
   {
