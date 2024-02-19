@@ -51,8 +51,8 @@ const BottomHero = () => {
           business."
         </Text>
 
-        <Flex className=" gap-4 items-center justify-between">
-          <Box>
+        <Flex className="items-center justify-between">
+          <Flex className=" items-center gap-4">
             <Avatar
               name="Prosper Otemuyiwa"
               src="https://bit.ly/prosper-baba"
@@ -68,7 +68,7 @@ const BottomHero = () => {
                 CEO of Bondi
               </Text>
             </Box>
-          </Box>
+          </Flex>
           <IconBxsQuoteRight />
         </Flex>
       </Box>
