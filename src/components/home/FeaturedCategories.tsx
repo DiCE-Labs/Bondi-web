@@ -20,9 +20,9 @@ const FeaturedCategories = () => {
           </p>
         </Link>
       </Flex>
-      <Box className=" w-full grid lg:grid-cols-3 grid-cols-1">
+      <Box className=" w-full grid lg:grid-cols-3 grid-cols-1 gap-8">
         {categories.map((item, i) => (
-          <Flex key={i} className=" items-center">
+          <Flex key={i} className=" items-center border-lime-400 border w-full border-opacity-40 p-4">
             <Box>{item.icon}</Box>
           </Flex>
         ))}
