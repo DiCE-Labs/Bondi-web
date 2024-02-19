@@ -1,4 +1,12 @@
-import { Box, Divider, Image, Text, useColorModeValue } from "@chakra-ui/react";
+import {
+  Avatar,
+  Box,
+  Divider,
+  Flex,
+  Image,
+  Text,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import bg from "../../assets/images/hero.png";
 
 const BottomHero = () => {
@@ -41,6 +49,10 @@ const BottomHero = () => {
           the perfect solution for our business. It has really helped our
           business."
         </Text>
+
+        <Flex>
+          <Avatar name="Prosper Otemuyiwa" src="https://bit.ly/prosper-baba" />
+        </Flex>
       </Box>
     </Box>
   );
