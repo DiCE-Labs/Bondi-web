@@ -1,10 +1,11 @@
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { Box, Flex, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import { categories } from "../../constants/constants";
 
 const FeaturedCategories = () => {
   return (
-    <Box as={"section"} className="py-21 w-full">
+    <Box as={"section"} className="py-12 w-full">
       <Flex className=" w-full gap-8 justify-between items-center my-8">
         <Text className=" text-2xl md:text-4xl font-bold">
           Featured Categories
@@ -19,6 +20,13 @@ const FeaturedCategories = () => {
           </p>
         </Link>
       </Flex>
+      <Box className=" w-full grid lg:grid-cols-3 grid-cols-1">
+        {categories.map((item, i) => (
+          <Flex key={i} className=" items-center">
+            <Box>{item.icon}</Box>
+          </Flex>
+        ))}
+      </Box>
     </Box>
   );
 };
