@@ -5,6 +5,7 @@ import { dummyListing } from "../../constants/constants";
 import IconBedQueenOutline from "../../assets/icons/BedIcon";
 import IconBxBath from "../../assets/icons/BathIcon";
 import IconBxArea from "../../assets/icons/AreaIcon";
+import IconStars from "../../assets/icons/Stars";
 
 const FeaturedListings = () => {
   return (
@@ -16,7 +17,7 @@ const FeaturedListings = () => {
         <Text className=" text-2xl md:text-4xl font-bold">
           Featured Listings
         </Text>
-        <Link to={"#"} className="md:text-base text-sm">
+        <Link to={"#"} className="md:text-base text-sm font-bold">
           {" "}
           <p>
             Browse All Featured{" "}
@@ -32,13 +33,17 @@ const FeaturedListings = () => {
             key={i}
             className={`rounded-xl shadow-lg hover:shadow-2xl duration-500 delay-200 overflow-hidden border-lime-400 border border-opacity-40`}
           >
-            <Box className=" h-48">
+            <Box className=" h-48 relative">
               <Image
                 alt="listingImg"
                 loading="lazy"
                 className="w-full h-full object-cover"
                 src={item.image}
               />
+              <Flex className=" bg-black text-white absolute top-4 right-4 rounded-md p-1 gap-1">
+                <IconStars />
+                Featured
+              </Flex>
             </Box>
             <Flex className=" flex-col gap-2 p-4">
               <Text className=" text-xl md:text-2xl font-bold">
