@@ -42,23 +42,23 @@ const FeaturedListings = () => {
             </Box>
             <Flex className=" flex-col gap-2 p-4">
               <Text className=" text-xl md:text-2xl font-bold">
-                {item.price}{" "}
-                <span className=" md:text-base text-sm text-gray-400">
+                {item.price}
+                <span className=" md:text-base font-light  text-sm text-gray-400">
                   /month
                 </span>
               </Text>
               <Text className=" mb-4 font-semibold text-lg">{item.name}</Text>
               <Text className=" text-gray-500">{item.address}</Text>
               <Flex className=" mt-6 justify-between">
-                <Flex className=" items-center">
+                <Flex className=" items-center gap-1">
                   <IconBedQueenOutline />
                   {item.bedrooms} beds
                 </Flex>
-                <Flex className=" items-center">
+                <Flex className=" items-center gap-1">
                   <IconBxBath />
                   {item.bathrooms} baths
                 </Flex>
-                <Flex className=" items-center">
+                <Flex className=" items-center gap-1">
                   <IconBxArea />
                   {item.dimensions} m<sup>2</sup>
                 </Flex>
