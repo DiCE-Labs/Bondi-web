@@ -31,7 +31,7 @@ const FeaturedCategories = () => {
             key={i}
             className=" items-center justify-between shadow rounded-xl border-[#A2FAA3] border w-full border-opacity-40 p-4"
           >
-            <Flex className=" items-center gap-2">
+            <Flex className=" items-center gap-4">
               <Box className={`bg-[#A2FAA3] p-2 rounded-lg bg-opacity-30`}>
                 {item.icon}
               </Box>
