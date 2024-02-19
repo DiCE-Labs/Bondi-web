@@ -30,7 +30,17 @@ const BottomHero = () => {
           We guarantee that the products we sell will make our customers happy
           because we are very concerned about our consumer satisfaction
         </Text>
-        <Divider/>
+        <Divider />
+        <Text
+          className={`${useColorModeValue(
+            "text-gray-600",
+            "text-gray-300"
+          )} py-4 mb-6 max-w-sm`}
+        >
+          "Your company is truly upstanding and is behind its product 100%. It's
+          the perfect solution for our business. It has really helped our
+          business."
+        </Text>
       </Box>
     </Box>
   );
