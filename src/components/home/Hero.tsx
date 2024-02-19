@@ -26,7 +26,7 @@ const Hero = () => {
         <Text className="md:text-7xl text-5xl font-bold">
           We help people to realize their dream property
         </Text>
-        <Text as={"p"} className={` max-w-md mt-4 text-gray-500`}>
+        <Text as={"p"} className={` max-w-md mt-4 ${useColorModeValue("text-gray-600","text-gray-300")}`}>
           We are creative people who provide the best way to you who want to
           have a new confortable and suitable place to live
         </Text>
