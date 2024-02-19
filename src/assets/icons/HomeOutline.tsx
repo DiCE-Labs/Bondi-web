@@ -1,6 +1,6 @@
 function IconHomeOutline() {
   return (
-    <svg viewBox="0 0 512 512" fill="currentColor" height="1.5em" width="1.5em">
+    <svg viewBox="0 0 512 512" fill="currentColor" height="3em" width="3em">
       <path
         fill="none"
         stroke="currentColor"
