@@ -1,6 +1,6 @@
 function IconDocument_stack() {
   return (
-    <svg viewBox="0 0 21 21" fill="currentColor" height="3em" width="3em">
+    <svg viewBox="0 0 21 21" fill="currentColor" height="2.5rem" width="2.5rem">
       <g
         fill="none"
         fillRule="evenodd"
