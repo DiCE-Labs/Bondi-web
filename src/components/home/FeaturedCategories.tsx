@@ -1,7 +1,8 @@
 import { ArrowForwardIcon } from "@chakra-ui/icons";
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { categories } from "../../constants/constants";
+import IconArrowUpRight from "../../assets/icons/ArrowUpRight";
 
 const FeaturedCategories = () => {
   return (
@@ -22,8 +23,23 @@ const FeaturedCategories = () => {
       </Flex>
       <Box className=" w-full grid lg:grid-cols-3 grid-cols-1 gap-8">
         {categories.map((item, i) => (
-          <Flex key={i} className=" items-center rounded-xl border-[#A2FAA3] border w-full border-opacity-40 p-4">
-            <Box className={`bg-[#A2FAA3] p-2 text-gray-800 rounded-lg`}>{item.icon}</Box>
+          <Flex
+            key={i}
+            className=" items-center justify-between rounded-xl border-[#A2FAA3] border w-full border-opacity-40 p-4"
+          >
+            <Flex>
+              <Box className={`bg-[#A2FAA3] p-2 text-gray-800 rounded-lg`}>
+                {item.icon}
+              </Box>
+              <Text>{item.name}</Text>
+            </Flex>
+            <Button
+              variant={"ghost"}
+              className="hover:bg-[#A2FAA3]"
+              rightIcon={<IconArrowUpRight />}
+            >
+              View
+            </Button>
           </Flex>
         ))}
       </Box>
