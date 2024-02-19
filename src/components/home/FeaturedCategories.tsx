@@ -5,6 +5,10 @@ import { categories } from "../../constants/constants";
 import IconArrowUpRight from "../../assets/icons/ArrowUpRight";
 
 const FeaturedCategories = () => {
+  const buttonColor = useColorModeValue(
+    "hover:text-gray-700",
+    "hover:text-[#A2FAA3]"
+  );
   return (
     <Box as={"section"} className="py-12 w-full">
       <Flex className=" w-full gap-8 justify-between items-center my-8">
@@ -35,10 +39,7 @@ const FeaturedCategories = () => {
             </Flex>
             <Button
               variant={"ghost"}
-              className={` ${useColorModeValue(
-                "hover:text-gray-700",
-                "hover:text-[#A2FAA3]"
-              )} `}
+              className={buttonColor}
               rightIcon={<IconArrowUpRight />}
             >
               View
