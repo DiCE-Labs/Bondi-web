@@ -27,7 +27,7 @@ const FeaturedListings = () => {
           </p>
         </Link>
       </Flex>
-      <Box className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 w-full gap-8">
+      <Box className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 w-full gap-8 mt-8">
         {dummyListing.map((item, i) => (
           <Box
             key={i}

@@ -10,7 +10,7 @@ const FeaturedCategories = () => {
     "hover:text-[#A2FAA3]"
   );
   return (
-    <Box as={"section"} className="py-12 w-full">
+    <Box as={"section"} className="py-16 w-full">
       <Flex className=" w-full gap-8 justify-between items-center my-8">
         <Text className=" text-2xl md:text-4xl font-bold">
           Featured Categories
@@ -25,7 +25,7 @@ const FeaturedCategories = () => {
           </p>
         </Link>
       </Flex>
-      <Box className=" w-full grid lg:grid-cols-3 grid-cols-1 gap-8">
+      <Box className=" w-full grid lg:grid-cols-3 grid-cols-1 gap-8 my-12">
         {categories.map((item, i) => (
           <Flex
             key={i}
