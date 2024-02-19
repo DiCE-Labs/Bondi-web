@@ -5,3 +5,4 @@ export const colors = {
   sem: "#247BA0",
   blue: "#1B98E0",
 };
+
