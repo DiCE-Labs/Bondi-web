@@ -8,6 +8,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import bg from "../../assets/images/hero.png";
+import IconBxsQuoteRight from "../../assets/icons/QuoteRight";
 
 const BottomHero = () => {
   return (
@@ -50,19 +51,25 @@ const BottomHero = () => {
           business."
         </Text>
 
-        <Flex className=" gap-4 items-center">
-          <Avatar name="Prosper Otemuyiwa" src="https://bit.ly/prosper-baba" />
+        <Flex className=" gap-4 items-center justify-between">
           <Box>
-            <Text className="font-bold">Cholah Kuboko</Text>
-            <Text
-              className={`${useColorModeValue(
-                "text-gray-400",
-                "text-gray-300"
-              )}`}
-            >
-              CEO of Bondi
-            </Text>
+            <Avatar
+              name="Prosper Otemuyiwa"
+              src="https://bit.ly/prosper-baba"
+            />
+            <Box>
+              <Text className="font-bold">Cholah Kuboko</Text>
+              <Text
+                className={`${useColorModeValue(
+                  "text-gray-500",
+                  "text-gray-300"
+                )}`}
+              >
+                CEO of Bondi
+              </Text>
+            </Box>
           </Box>
+          <IconBxsQuoteRight />
         </Flex>
       </Box>
     </Box>
