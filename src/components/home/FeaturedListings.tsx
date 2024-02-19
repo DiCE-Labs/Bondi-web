@@ -31,7 +31,7 @@ const FeaturedListings = () => {
         {dummyListing.map((item, i) => (
           <Box
             key={i}
-            className={`rounded-xl shadow-lg hover:shadow-2xl duration-500 delay-200 overflow-hidden border-lime-400 border border-opacity-40`}
+            className={`rounded-xl shadow-lg hover:shadow-2xl duration-500 delay-200 overflow-hidden border-[#A2FAA3] border border-opacity-40`}
           >
             <Box className=" h-48 relative">
               <Image

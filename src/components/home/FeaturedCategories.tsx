@@ -22,8 +22,8 @@ const FeaturedCategories = () => {
       </Flex>
       <Box className=" w-full grid lg:grid-cols-3 grid-cols-1 gap-8">
         {categories.map((item, i) => (
-          <Flex key={i} className=" items-center rounded-xl border-lime-400 border w-full border-opacity-40 p-4">
-            <Box className={`bg-lime-400 p-2`}>{item.icon}</Box>
+          <Flex key={i} className=" items-center rounded-xl border-[#A2FAA3] border w-full border-opacity-40 p-4">
+            <Box className={`bg-[#A2FAA3] p-2`}>{item.icon}</Box>
           </Flex>
         ))}
       </Box>
