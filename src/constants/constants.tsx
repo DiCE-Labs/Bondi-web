@@ -1,3 +1,5 @@
+import IconDocument_stack from "../assets/icons/Document";
+import IconHomeCityOutline from "../assets/icons/HomeCity";
 import IconHomeOutline from "../assets/icons/HomeOutline";
 import img1 from "../assets/images/house1.jpg";
 import img2 from "../assets/images/house2.jpg";
@@ -39,11 +41,11 @@ export const categories = [
     name: "Appartments",
   },
   {
-    icon: "",
+    icon: <IconHomeCityOutline />,
     name: "Boarding House",
   },
   {
-    icon: "",
+    icon: <IconDocument_stack />,
     name: "Plots",
   },
 ];
