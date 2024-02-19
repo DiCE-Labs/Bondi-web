@@ -26,7 +26,7 @@ const BottomHero = () => {
           className=" w-full h-full object-cover grayscale hover:grayscale-0 duration-300 delay-100 hover:rotate-1 hover:scale-105 ease-in-out"
         />
       </Box>
-      <Box className="md:max-w-md lg:max-w-lg w-full">
+      <Box className="md:max-w-md w-full">
         <Text as={"h1"} className="text-2xl md:text-4xl font-bold">
           Comfort Is Our Top Priority For You
         </Text>
