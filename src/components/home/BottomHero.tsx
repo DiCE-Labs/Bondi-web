@@ -11,7 +11,7 @@ import bg from "../../assets/images/hero.png";
 
 const BottomHero = () => {
   return (
-    <Box className="grid lg:grid-cols-2 grid-cols-1 gap-8 w-full py-12">
+    <Box className="grid lg:grid-cols-2 grid-cols-1 justify-center items-center gap-8 w-full py-12">
       <Box
         className={`flex items-center overflow-hidden lg:order-last order-first rounded-xl justify-center w-full ${useColorModeValue(
           "bg-[#1B98E0]",
@@ -43,7 +43,7 @@ const BottomHero = () => {
           className={`${useColorModeValue(
             "text-gray-600",
             "text-gray-300"
-          )} py-4 mb-6 max-w-sm`}
+          )} py-4 mb-6 max-w-sm text-sm`}
         >
           "Your company is truly upstanding and is behind its product 100%. It's
           the perfect solution for our business. It has really helped our
@@ -52,6 +52,10 @@ const BottomHero = () => {
 
         <Flex>
           <Avatar name="Prosper Otemuyiwa" src="https://bit.ly/prosper-baba" />
+          <Box>
+            <Text>Cholah Kuboko</Text>
+            <Text>Bondi CEO</Text>
+          </Box>
         </Flex>
       </Box>
     </Box>
